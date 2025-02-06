@@ -25,7 +25,7 @@ Discover example integrations with various frameworks:
 ## Setup
 
 1. **Obtain an API Key:**  
-      Get your API key from the [Dhesend Dashboard](https://dhesend.vercel.app).
+      Get your API key from the [Dhesend Dashboard](https://dhesend.vercel.app/api-keys).
 
 2. **Initialize the SDK:**  
       Use your API key to create an instance of the Dhesend client.
