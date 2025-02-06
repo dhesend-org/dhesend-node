@@ -1,0 +1,43 @@
+{
+  "name": "dhesend",
+  "version": "1.0.3",
+  "main": "./dist/src/index.js",
+  "types": "./dist/types/src/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/types/src/index.d.ts",
+        "default": "./dist/src/index.js"
+      },
+      "require": {
+        "types": "./dist/types/src/*",
+        "default": "./dist/src/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "rm -rf ./dist && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhesend/dhesend-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dhesend/dhesend-node/issues"
+  },
+  "homepage": "https://github.com/dhesend/dhesend-node#readme",
+  "keywords": [
+    "dhesend"
+  ],
+  "author": "DheM",
+  "license": "MIT",
+  "description": "Node.js library for the Dhesend API",
+  "devDependencies": {
+    "@types/node": "^22.8.6",
+    "typescript": "^5.6.3"
+  }
+}
